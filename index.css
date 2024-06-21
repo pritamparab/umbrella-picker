@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-umbrella {
+    display: flex;
+    height: 92vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.left-content {
+    width: 25rem;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 27.5%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.animate {
+    animation: spin 2s linear infinite;
+    /* Apply the spinning animation */
+}
+
+.customize-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    text-align: start;
+}
+
+.upload-label,
+#logo-upload {
+    display: block;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.color-options {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    line-height: 0.8;
+}
+
+p:first-child {
+    font-weight: 600;
+}
+
+.footer>#info {
+    font-size: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+
+#logo-display {
+    position: absolute;
+    left: 48%;
+    bottom: 12%;
+}
+
+.upload-button:disabled {
+    opacity: 5;
+    cursor: not-allowed;
+}
+
+#button-label {
+    text-align: center;
+}
+
+.upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498DB; /* Initial button color */
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.upload-button span#cross-icon {
+    margin-left: 10px;
+}
+
+.upload-button img {
+    margin-right: 10px;
+}
+.button-text{
+    text-align: center;
+    width: 100%;
+}

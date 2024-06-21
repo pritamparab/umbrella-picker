@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Umbrella</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="custom-umbrella" id="container">
+        <div>
+            <div class="left-content">
+                <div class="image-container">
+                    <img src="./icons/blue-umbrella.png" width="400" height="350" alt="Custom Umbrella" class="umbrella-image" id="umbrella">
+                    <img class="hidden" id="logo-display" src="" width="28" height="28">
+                </div>
+                <div class="loader hidden" id="loader">
+                    <img class="animate" src="./icons/loader_icon.svg" alt="loader-image">
+                </div>
+            </div>
+        </div>
+        <div class="customize-section" id="customize-section">
+            <div>
+                <h1>Custom Umbrella</h1>
+                <div class="color-options">
+                    <span class="color" style="background-color: #0af;" data-color="blue-umbrella.png" data-bg-color="#e4f8fe" data-btn-color="#3498DB"></span>
+                    <span class="color" style="background-color: #f0f;" data-color="pink-umbrella.png" data-bg-color="#f6b3d3" data-btn-color="#E74292"></span>
+                    <span class="color" style="background-color: #fa0;" data-color="yellow-umbrella.png" data-bg-color="#fcf9ca" data-btn-color="#FAD02E"></span>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Customize your umbrella</p>
+                <label for="logo-upload" class="upload-label">Upload a logo for an instant preview.</label>
+                <p id="info">.png and .jpg files only. Max file size is 5MB</p>
+                <div class="upload-button" id="upload-button">
+                    <span id="button-logo">
+                        <img id="btn-logo-img" src="./icons/upload_icon.svg" width="14" height="14" alt="upload-icon">
+                    </span>
+                    <span id="upload-loader" class="hidden">
+                        <img class="animate" src="./icons/loader_icon.svg" width="14" height="14" alt="upload-loader-image">
+                    </span>
+                    <span id="button-label" class="button-text">UPLOAD LOGO</span>
+                    <span id="file-name" class="hidden button-text"></span>
+                    <span id="cross-icon" class="hidden">
+                        <img src="./icons/cross.svg" width="14" height="14" alt="cross-icon">
+                    </span>
+                </div>
+                <input type="file" id="logo-input" accept=".png, .jpg" class="hidden">
+            </div>
+        </div>
+    </div>
+    <script src="Umbrella.js"></script>
+</body>
+</html>
